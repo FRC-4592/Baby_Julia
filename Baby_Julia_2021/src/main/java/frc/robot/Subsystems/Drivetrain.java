@@ -49,7 +49,7 @@ public class Drivetrain extends SubsystemFramework {
 		//leftSlaveMotor.follow(leftMasterMotor);
 	
 
-		myRobot.arcadeDrive((Hardware.driverPad.getRawAxis(1)), (Hardware.driverPad.getRawAxis(4) * -1), false);
+		myRobot.arcadeDrive((Hardware.driverPad.getRawAxis(1)), (Hardware.driverPad.getRawAxis(4)), false);
 
 	}
 
@@ -80,9 +80,9 @@ public class Drivetrain extends SubsystemFramework {
 				leftMasterMotor.configNominalOutputForward(0, 10);
 				rightMasterMotor.configNominalOutputReverse(0, 10);
 				leftMasterMotor.configNominalOutputReverse(0, 10);
-				rightMasterMotor.configPeakOutputForward(.3, 10);
-				leftMasterMotor.configPeakOutputForward(1, 10);
-				rightMasterMotor.configPeakOutputReverse(-.3, 10);
-				leftMasterMotor.configPeakOutputReverse(-1, 10);
+				rightMasterMotor.configPeakOutputForward(.75, 10);
+				leftMasterMotor.configPeakOutputForward(.75, 10);
+				rightMasterMotor.configPeakOutputReverse(-.75, 10);
+				leftMasterMotor.configPeakOutputReverse(-.75, 10);
     }
 }
